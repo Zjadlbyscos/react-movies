@@ -2,7 +2,7 @@
 function Movies() {
     return(
   <div>
-      MOVIES 
+     <p>LIST OF MOVIES</p>
   </div>
     )  
   }
