@@ -67,4 +67,4 @@ get detailed information about specific movies.
 ## Code Splitting.
 
 The application implements code splitting for asynchronous loading of JS code
-using React.lazy() and <Suspense>.
+using React.lazy() and "<Suspense>".
