@@ -11,9 +11,12 @@ const MovieDetails = () => {
       try {
         const details = await getMovieDetails(movieId);
         setMovieDetails(details);
+        setMovieDetails(details);
+        console.log('Movie Details:', details);
       } catch (error) {
         console.error('Error fetching movie details:', error.message);
       }
+
     };
 
     fetchMovieDetails();
@@ -26,6 +29,7 @@ const MovieDetails = () => {
   return (
     <div>
       <h2>{movieDetails.title}</h2>
+      <img src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`} alt={movieDetails.title} />
       <p>{movieDetails.overview}</p>
       {/* Dodaj więcej inf */}
     </div>
