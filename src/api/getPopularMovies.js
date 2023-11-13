@@ -17,8 +17,6 @@ const getPopularMovies = async () => {
   const results = await data.results;
 
   return results;
-} 
-
-
+};
 
 export default getPopularMovies;
