@@ -33,12 +33,13 @@ const Cast = () => {
         <h2>Cast</h2>
         <ul>
           {cast.map((actor) => (
+             actor.profile_path &&(
             <li key={actor.id}>
               <img src={`https://image.tmdb.org/t/p/w200${actor.profile_path}`} alt={actor.name} />
-              
+
               <p>{actor.name}</p>
               <p>Character: {actor.character}</p>
-            </li>
+            </li>)
 
           ))}
         </ul>
