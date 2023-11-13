@@ -4,7 +4,7 @@ import { useEffect,useState } from "react";
 import getPopularMovies from "api/getPopularMovies";
 import PopularList from "components/PopularList/PopularList";
 
-function Home() {
+export default function Home() {
 
 const [movies, setMovies] = useState([]);
 
@@ -37,4 +37,3 @@ useEffect(() => {
   );
 }
 
-export default Home;

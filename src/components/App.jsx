@@ -13,9 +13,9 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/movies" element={<Movies />}></Route>
+        {/* <Route path="" element={<Home />}></Route>
         <Route path="" element={<Home />}></Route>
-        <Route path="" element={<Home />}></Route>
-        <Route path="" element={<Home />}></Route>
+        <Route path="" element={<Home />}></Route> */}
       </Routes>
     </div>
   );
