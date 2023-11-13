@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getMovieDetails } from 'api/getMovieDetails';
 
+import { Link } from 'react-router-dom';
+
 const MovieDetails = () => {
   const { movieId } = useParams();
   const [movieDetails, setMovieDetails] = useState(null);
@@ -32,6 +34,9 @@ const MovieDetails = () => {
       <img src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`} alt={movieDetails.title} />
       <p>{movieDetails.overview}</p>
       {/* Dodaj więcej inf */}
+      <Link to={`/movies/${movieId}/cast`}>
+        <button>Cast</button>
+      </Link>
     </div>
   );
 };
