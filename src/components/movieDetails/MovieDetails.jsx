@@ -37,6 +37,9 @@ const MovieDetails = () => {
       <Link to={`/movies/${movieId}/cast`}>
         <button>Cast</button>
       </Link>
+      <Link to={`/movies/${movieId}/reviews`}>
+        <button>Reviews</button>
+      </Link>
     </div>
   );
 };
