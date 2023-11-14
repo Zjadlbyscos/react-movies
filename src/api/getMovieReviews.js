@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { API_KEY, BASE_URL } from './KEY';
-import { async } from 'q';
 const MOVIE_REVIEWS_ENDPOINT = '/movie';
 
 export const getMovieReviews = async movieId => {
