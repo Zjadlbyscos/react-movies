@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+
+import { useParams , Link} from 'react-router-dom';
 
 import { getMovieCredits } from 'api/getMovieCast';
 
@@ -30,6 +31,9 @@ const Cast = () => {
   
     return (
       <div>
+        <Link to={`/movies/${movieId}`}>
+        <button>Back</button>
+      </Link>
         <h2>Cast</h2>
         <ul>
           {cast.map((actor) => (
@@ -43,6 +47,9 @@ const Cast = () => {
 
           ))}
         </ul>
+        <Link to={`/movies/${movieId}`}>
+        <button>Back</button>
+      </Link>
       </div>
     );
   };
