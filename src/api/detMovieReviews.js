@@ -3,7 +3,7 @@ import { API_KEY, BASE_URL } from './KEY';
 import { async } from 'q';
 const MOVIE_REVIEWS_ENDPOINT = '/movie';
 
-const getMovieReviews = async movieId => {
+export const getMovieReviews = async movieId => {
   try {
     const response = await axios.get(
       `${BASE_URL}${MOVIE_REVIEWS_ENDPOINT}/${movieId}/reviews?api_key=${API_KEY}`
