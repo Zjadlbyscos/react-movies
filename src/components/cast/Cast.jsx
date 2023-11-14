@@ -24,7 +24,7 @@ const Cast = () => {
   
       fetchMovieCredits();
     }, [movieId]);
-  
+    
     if (!cast) {
       return <p>Loading...</p>;
     }
