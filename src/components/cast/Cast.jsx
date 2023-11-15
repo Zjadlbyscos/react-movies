@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-
 import { useParams , Link} from 'react-router-dom';
-
 import { getMovieCredits } from 'api/getMovieCast';
 
+import css from './Cast.module.css'
 const Cast = () => {
     const { movieId } = useParams();
 
@@ -30,18 +29,18 @@ const Cast = () => {
     }
   
     return (
-      <div>
+      <div className={css.container}>
         <Link to={`/movies/${movieId}`}>
         <button>Back</button>
       </Link>
         <h2>Cast</h2>
-        <ul>
+        <ul className={css.actors}>
           {cast.map((actor) => (
              actor.profile_path &&(
-            <li key={actor.id}>
+            <li className={css.actor} key={actor.id}>
               <img src={`https://image.tmdb.org/t/p/w200${actor.profile_path}`} alt={actor.name} />
 
-              <p>{actor.name}</p>
+              <p className={css.name} >{actor.name}</p>
               <p>Character: {actor.character}</p>
             </li>)
 

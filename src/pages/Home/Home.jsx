@@ -4,6 +4,8 @@ import { useEffect,useState } from "react";
 import getPopularMovies from "api/getPopularMovies";
 import PopularList from "components/PopularList/PopularList";
 
+import css from "./Home.module.css"
+
 export default function Home() {
 
 const [movies, setMovies] = useState([]);
@@ -30,8 +32,8 @@ useEffect(() => {
 //   }, []);
 
   return (
-    <div>
-      <h2>Movies Trending Today</h2>
+    <div className={css.container}>
+      <h2 className={css.title}>Movies Trending Today</h2>
       <PopularList movies={movies}></PopularList>
     </div>
   );

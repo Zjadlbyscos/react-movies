@@ -3,7 +3,7 @@ import { getMoviebyQuery } from 'api/getMovieByQuery';
 
 import SearchedList from 'components/SearchedList/SearchedList';
 
-
+import css from './Movie.module.css'
 
 function Movies() {
   const [movies, setMovies] = useState([]);
@@ -22,16 +22,16 @@ function Movies() {
   };
 
   return (
-    <div>
-      <form  onSubmit={handleSearch}>
-        <input
+    <div className={css.container}>
+      <form className={css.form} onSubmit={handleSearch}>
+        <input className={css.input}
           name="query"
        
           placeholder="Search Movie"
           value={searchParam}
           onChange={e => setSearchParam(e.target.value)}
         />
-        <button type="submit" >
+        <button className={css.button} type="submit" >
           Search
         </button>
       </form>
