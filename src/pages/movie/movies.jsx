@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { getMoviebyQuery } from 'api/getMovieByQuery';
 import SearchedList from 'components/SearchedList/SearchedList';
 
-import css from './movies.module.css';
+
 
 function Movies() {
   const [movies, setMovies] = useState([]);
@@ -22,15 +22,15 @@ function Movies() {
 
   return (
     <div>
-      <form className={css.form} onSubmit={handleSearch}>
+      <form  onSubmit={handleSearch}>
         <input
           name="query"
-          className={css.input}
+       
           placeholder="Search Movie"
           value={searchParam}
           onChange={e => setSearchParam(e.target.value)}
         />
-        <button type="submit" className={css.button}>
+        <button type="submit" >
           Search
         </button>
       </form>
