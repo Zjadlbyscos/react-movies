@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { getMoviebyQuery } from 'api/getMovieByQuery';
+
 import SearchedList from 'components/SearchedList/SearchedList';
 
 
