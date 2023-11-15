@@ -4,10 +4,11 @@ import { lazy } from 'react';
 import SharedLayout from './sharedLayout/SharedLayout';
 
 const Home = lazy(() => import('../pages/Home/Home'));
-const Movies = lazy(() => import('../pages/Movie/Movies'));
-const MovieDetails = lazy(() => import('./movieDetails/MovieDetails'));
 const Cast = lazy(() => import('./cast/Cast'));
+const Movies = lazy(() => import('../pages/Movie/Movies'));
 const Reviews = lazy(() => import('./reviews/Reviews'));
+const MovieDetails = lazy(() => import('./movieDetails/MovieDetails'));
+
 
 export const App = () => {
   return (
