@@ -1,0 +1,44 @@
+.container {
+padding: 20px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  }
+  .actors{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+   
+  }
+  .item {
+    text-align: center;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .name {
+    margin-top: 10px;
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    color: #333; 
+  }
+  .actors p{
+    max-width: 20vw;
+  }
+  button{
+    padding: 10px 20px;
+    background-color: #35404d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
