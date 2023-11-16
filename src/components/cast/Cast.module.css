@@ -8,6 +8,7 @@ padding: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
     list-style: none;
    
   }
@@ -28,7 +29,7 @@ padding: 20px;
     color: #333; 
   }
   .actors p{
-    max-width: 20vw;
+    max-width: 15vw;
   }
   button{
     padding: 10px 20px;
