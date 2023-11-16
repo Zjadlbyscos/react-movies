@@ -6,7 +6,7 @@ import css from './Popular.module.css';
 function PopularList({ movies }) {
   return (
     <ul className={css.movie}>
-      {movies.map(movie => (
+      {movies.map(movie => ( movie.title&&
         <li className={css.movie__item} key={movie.id}>
           <Link to={`/movies/${movie.id}`}>
             <img
