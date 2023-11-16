@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import css from './Popular.module.css';
+
 function PopularList({ movies }) {
   return (
     <ul className={css.movie}>

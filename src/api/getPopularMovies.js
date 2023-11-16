@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const API_KEY = '854b2461bbe5507a6040236243f8820c';
-const BASE_URL = 'https://api.themoviedb.org/3';
+import { API_KEY, BASE_URL } from './KEY';
+
 const POPULAR_ENDPOINT = '/trending/all/day';
 
 const getPopularMovies = async () => {

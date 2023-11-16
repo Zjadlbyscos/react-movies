@@ -8,5 +8,14 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "arrowParens": "avoid",
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "importOrder": ["^react$", "^@your-package", "^[./]"],
+        "importOrderSeparation": true
+      }
+    }
+  ]
 }

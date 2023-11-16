@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import css from '../PopularList/Popular.module.css';
+
 const SearchedList = ({ movies }) => (
   <div>
     {movies.length > 0 ? (
