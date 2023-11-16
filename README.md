@@ -20,7 +20,8 @@ information about specific movies.
 
 ## Preview
 
-![App look](./assets/deploy-status.png)
+![App look](./assets/home.png)
+![App look](./assets/movie.png)
 
 ## Installation
 
