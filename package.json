@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Zjadlbyscos.github.io/goit-react-hw-05-movies/",
+  "homepage": "https://zjadlbyscos.github.io/react-movies/",
   "dependencies": {
     "axios": "^1.6.1",
     "eslint-config-react-app": "^7.0.1",
